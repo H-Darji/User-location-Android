@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     public void onLocationChanged(Location location) {
         newLat = location.getLatitude();
         newLog = location.getLongitude();
-        if(newLat != latitude || newLog != longitude){
+        if (newLat != latitude || newLog != longitude) {
             latitude = newLat;
             longitude = newLog;
             Toast.makeText(getApplicationContext(), "Location updated.", Toast.LENGTH_SHORT).show();
